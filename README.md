@@ -4,4 +4,4 @@
 
 ### subtexto
 
-~~ riscado ~~
+~~riscado~~
