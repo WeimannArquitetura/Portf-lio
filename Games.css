@@ -43,9 +43,9 @@ body {
 /* Container and Project Layout */
 .container {
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 1rem;
 }
 
 .project {
@@ -158,7 +158,7 @@ object {
 .lightbox {
 	display: none;
 	position: fixed;
-	z-index: 999;
+	z-index: 1000;
 	padding: 20px;
 	background: rgba(0, 0, 0, 0.8);
 	top: 0;
@@ -175,7 +175,9 @@ object {
 }
 
 .lightbox:target {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .close {
@@ -225,6 +227,37 @@ object {
 .close i {
 	font-size: 40px;
 	color: white;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	text-align: center;
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 90%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	display: block;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
 }
 
 /* Responsive Design */
@@ -282,4 +315,22 @@ object {
 	.description {
 		font-size: 18px;
 	}
+}
+
+/* Add to styles.css */
+.pdf-project {
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.pdf-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.pdf-container iframe {
+	width: 100%;
+	height: 800px;
+	border: none;
 }

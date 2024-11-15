@@ -5,14 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weimann Arquitetura</title>
-	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-	<!-- uncomment lines below to include extra p5 libraries -->
-	<!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
-	<!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
-	<script language="javascript" type="text/javascript" src="Lines.js"></script>
+	<script src="libraries/p5.js"></script>
+	<script src="Lines.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
-	<link href="Games.css" rel="stylesheet" type="text/css">
-	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="./Games.css" rel="stylesheet">
+	<link href="./styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -26,11 +23,12 @@
 	<br>
 
 	<div class="container">
+		<!-- Flora Clube Project -->
 		<div class="project">
 			<div class="main-row">
 				<div class="main-image">
 					<a href="#img-flora-1">
-						<img class="project-image" src="images/Flora Clube/Image1.png" alt="Flora Clube main image">
+						<img class="project-image" src="./images/Flora Clube/Image1.png" alt="Flora Clube main image">
 					</a>
 				</div>
 				<div class="project-info">
@@ -80,9 +78,10 @@
 
 	<br>
 	<br>
-	<br>
+	<br><br><br><br>
 
 	<div class="container">
+		<!-- Casa Del Pescador Project -->
 		<div class="project">
 			<div class="main-row">
 				<div class="main-image">
@@ -111,7 +110,7 @@
 				</div>
 				<div class="secondary-image">
 					<a href="#img-casa-4">
-						<img class="project-image" src="images/Casa Del Pescador/Image4.png"
+						<img class="project-image" src="./images/Casa Del Pescador/Image4.png"
 							alt="Casa Del Pescador secondary image 3">
 					</a>
 				</div>
@@ -121,49 +120,56 @@
 
 	<div class="lightbox" id="img-casa-1">
 		<a href="#" class="close"><i class="fas fa-times"></i></a>
-		<img src="images/Casa Del Pescador/Image1.png" alt="Casa Del Pescador main image">
+		<img src="./images/Casa Del Pescador/Image1.png" alt="Casa Del Pescador main image">
 	</div>
 	<div class="lightbox" id="img-casa-2">
 		<a href="#" class="close"><i class="fas fa-times"></i></a>
-		<img src="images/Casa Del Pescador/Image2.png" alt="Casa Del Pescador secondary image 1">
+		<img src="./images/Casa Del Pescador/Image2.png" alt="Casa Del Pescador secondary image 1">
 	</div>
 	<div class="lightbox" id="img-casa-3">
 		<a href="#" class="close"><i class="fas fa-times"></i></a>
-		<img src="images/Casa Del Pescador/Image3.png" alt="Casa Del Pescador secondary image 2">
+		<img src="./images/Casa Del Pescador/Image3.png" alt="Casa Del Pescador secondary image 2">
 	</div>
 	<div class="lightbox" id="img-casa-4">
 		<a href="#" class="close"><i class="fas fa-times"></i></a>
-		<img src="images/Casa Del Pescador/Image4.png" alt="Casa Del Pescador secondary image 3">
+		<img src="./images/Casa Del Pescador/Image4.png" alt="Casa Del Pescador secondary image 3">
 	</div>
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<br><br><br><br><br><br><br><br>
 
-	<object data="/teste/Portfolio 2023.pdf" type="application/pdf" width="100%" height="1000px">
-		<p>Unable to display PDF file. <a
-				href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.
-		</p>
-	</object>
+	<div class="container">
+		<!-- Portfolio PDF Section -->
+		<div class="project pdf-project">
+			<div class="pdf-container">
+				<iframe src="./teste/Portfolio 2023.pdf">
+					<p>Unable to display PDF file. <a href="./teste/Portfolio 2023.pdf">Download</a> instead.</p>
+				</iframe>
+			</div>
+		</div>
 
-	<div class="showcase">
-		<div class="bigbox">
-			<div class="smbox1"></div>
-			<div class="smbox2"></div>
-			<div class="smbox1"></div>
-			<div class="smbox2"></div>
-			<div class="smbox1"></div>
-			<div class="smbox2"></div>
+		<!-- Showcase section -->
+		<div class="showcase">
+			<div class="bigbox">
+				<div class="smbox1"></div>
+				<div class="smbox2"></div>
+				<div class="smbox1"></div>
+				<div class="smbox2"></div>
+				<div class="smbox1"></div>
+				<div class="smbox2"></div>
+			</div>
+		</div>
+
+		<br><br><br>
+
+		<!-- Outros Projetos PDF Section -->
+		<div class="project pdf-project">
+			<div class="pdf-container">
+				<iframe src="./teste/Outros Projetos.pdf">
+					<p>Unable to display PDF file. <a href="./teste/Outros Projetos.pdf">Download</a> instead.</p>
+				</iframe>
+			</div>
 		</div>
 	</div>
-
-	<object data="/teste/Outros Projetos.pdf" type="application/pdf" width="100%" height="1000px">
-		<p>Unable to display PDF file. <a
-				href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.
-		</p>
-	</object>
 
 	<script src="script.js"></script>
 </body>
